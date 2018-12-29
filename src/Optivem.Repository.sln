@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Optivem.Repository", "Optivem.Repository\Optivem.Repository.csproj", "{1ED1A005-8378-4EAC-BC72-B70C8B3C2B50}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1ED1A005-8378-4EAC-BC72-B70C8B3C2B50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1ED1A005-8378-4EAC-BC72-B70C8B3C2B50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1ED1A005-8378-4EAC-BC72-B70C8B3C2B50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1ED1A005-8378-4EAC-BC72-B70C8B3C2B50}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6A8A4B0B-9CE3-4FE1-99E5-6619B487625B}
+	EndGlobalSection
+EndGlobal
