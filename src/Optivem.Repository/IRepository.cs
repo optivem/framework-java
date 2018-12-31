@@ -90,15 +90,15 @@ namespace Optivem.Repository
 
         void Delete(TEntity entity);
 
-        bool Delete(object[] id);
+        void Delete(object[] id);
 
         void DeleteRange(IEnumerable<TEntity> entities);
 
-        List<KeyValuePair<object[], bool>> DeleteRange(IEnumerable<object[]> ids);
+        void DeleteRange(IEnumerable<object[]> ids);
 
         void DeleteRange(params TEntity[] entities);
 
-        List<KeyValuePair<object[], bool>> DeleteRange(params object[][] ids);
+        void DeleteRange(params object[][] ids);
 
         #endregion
     }

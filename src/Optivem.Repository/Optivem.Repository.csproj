@@ -10,6 +10,8 @@
     <PackageProjectUrl>https://opensource.optivem.com/csharp-repository</PackageProjectUrl>
     <RepositoryUrl>https://github.com/optivem/csharp-repository</RepositoryUrl>
     <PackageTags>generic repository; unit of work</PackageTags>
+    <Version>1.0.1</Version>
+    <AssemblyVersion>1.0.1.0</AssemblyVersion>
   </PropertyGroup>
 
 </Project>
