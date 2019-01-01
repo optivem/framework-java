@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Optivem.Commons.Repository
+namespace Optivem.Commons.Persistence
 {
     // TODO: VC: Attempt usage of entity
 

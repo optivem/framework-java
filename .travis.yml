@@ -1,5 +1,5 @@
 language: csharp
-solution: src/Optivem.Repository.sln
+solution: src/Optivem.Commons.Persistence.sln
 
 dotnet: 2.2
 mono: none

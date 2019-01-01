@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Optivem.Commons.Repository
+namespace Optivem.Commons.Persistence
 {
     public interface IUnitOfWork : IDisposable
     {
