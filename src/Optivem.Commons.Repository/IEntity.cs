@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Optivem.Repository
+namespace Optivem.Commons.Repository
 {
     // TODO: VC: Attempt usage of entity
 

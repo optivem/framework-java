@@ -4,7 +4,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 
-namespace Optivem.Repository
+namespace Optivem.Commons.Repository
 {
     // TODO: VC: Check Enumerable vs List as return type
 

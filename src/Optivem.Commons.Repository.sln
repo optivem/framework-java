@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Optivem.Repository", "Optivem.Repository\Optivem.Repository.csproj", "{1ED1A005-8378-4EAC-BC72-B70C8B3C2B50}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Optivem.Commons.Repository", "Optivem.Commons.Repository\Optivem.Commons.Repository.csproj", "{1ED1A005-8378-4EAC-BC72-B70C8B3C2B50}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
