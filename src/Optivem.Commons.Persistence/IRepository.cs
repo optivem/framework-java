@@ -6,14 +6,6 @@ using System.Threading.Tasks;
 
 namespace Optivem.Commons.Persistence
 {
-    // TODO: VC: Check Enumerable vs List as return type
-
-    // TODO: VC: Include also others like Avg, Max, Count etc.
-
-    // TODO: VC: Add NotNull attribute
-
-    // TODO: VC: Add - cancellation token
-
     public interface IRepository<TEntity> where TEntity : class
     {
         #region Read
@@ -102,15 +94,6 @@ namespace Optivem.Commons.Persistence
 
         #endregion
     }
-
-    // TODO: VC: Bring back
-
-    /*
-     * 
-public interface IRepository<TEntity, TId> : IRepository<TEntity>
-    where TEntity : class, IEntity<TId> 
-     * 
-     */
 
 
     public interface IRepository<TEntity, TId> : IRepository<TEntity>
