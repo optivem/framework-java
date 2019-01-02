@@ -35,11 +35,7 @@ namespace Optivem.Commons.Persistence
         TEntity GetFirstOrDefault(Expression<Func<TEntity, bool>> filter = null, params Expression<Func<TEntity, object>>[] includes);
 
         Task<TEntity> GetFirstOrDefaultAsync(Expression<Func<TEntity, bool>> filter = null, params Expression<Func<TEntity, object>>[] includes);
-
-        TEntity GetSingleOrDefault(params object[] id);
-
-        Task<TEntity> GetSingleOrDefaultAsync(params object[] id);
-
+        
         long GetCount(Expression<Func<TEntity, bool>> filter = null);
 
         Task<long> GetCountAsync(Expression<Func<TEntity, bool>> filter = null);
@@ -47,9 +43,7 @@ namespace Optivem.Commons.Persistence
         bool GetExists(Expression<Func<TEntity, bool>> filter = null);
 
         Task<bool> GetExistsAsync(Expression<Func<TEntity, bool>> filter = null);
-
-        // TODO: VC: Consider GetExists for the id
-
+        
         #endregion
 
         #region Create
@@ -81,44 +75,59 @@ namespace Optivem.Commons.Persistence
         #region Delete
 
         void Delete(TEntity entity);
-
-        void Delete(object[] id);
-
+        
         void DeleteRange(IEnumerable<TEntity> entities);
-
-        void DeleteRange(IEnumerable<object[]> ids);
-
+        
         void DeleteRange(params TEntity[] entities);
-
-        void DeleteRange(params object[][] ids);
 
         #endregion
     }
-
-
-    public interface IRepository<TEntity, TId> : IRepository<TEntity>
+    
+    public interface IRepository<TEntity, TKey> : IRepository<TEntity>
         where TEntity : class
     {
         #region Read
 
-        TEntity GetSingleOrDefault(TId id);
+        TEntity GetSingleOrDefault(TKey id);
 
-        Task<TEntity> GetSingleOrDefaultAsync(TId id);
+        Task<TEntity> GetSingleOrDefaultAsync(TKey id);
 
-        bool GetExists(TId id);
+        bool GetExists(TKey id);
 
-        Task<bool> GetExistsAsync(TId id);
+        Task<bool> GetExistsAsync(TKey id);
 
         #endregion
-
 
         #region Delete
 
-        void DeleteRange(IEnumerable<TId> ids);
+        void DeleteRange(IEnumerable<TKey> ids);
 
-        void DeleteRange(params TId[] ids);
+        void DeleteRange(params TKey[] ids);
+
+        #endregion
+    }
+
+    public interface IRepository<TEntity, TKey1, TKey2> : IRepository<TEntity>
+        where TEntity : class
+    {
+        #region Read
+
+        TEntity GetSingleOrDefault(TKey1 id1, TKey2 id2);
+
+        Task<TEntity> GetSingleOrDefaultAsync(TKey1 id1, TKey2 id2);
+
+        bool GetExists(TKey1 id1, TKey2 id2);
+
+        Task<bool> GetExistsAsync(TKey1 id1, TKey2 id2);
 
         #endregion
 
+        #region Delete
+
+        void DeleteRange(IEnumerable<Tuple<TKey1, TKey2>> ids);
+
+        void DeleteRange(params Tuple<TKey1, TKey2>[] ids);
+
+        #endregion
     }
 }
