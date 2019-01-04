@@ -114,11 +114,19 @@ namespace Optivem.Commons.Persistence
 
         TEntity GetSingleOrDefault(TKey1 id1, TKey2 id2);
 
+        TEntity GetSingleOrDefault(Tuple<TKey1, TKey2> id);
+
         Task<TEntity> GetSingleOrDefaultAsync(TKey1 id1, TKey2 id2);
+
+        Task<TEntity> GetSingleOrDefaultAsync(Tuple<TKey1, TKey2> id);
 
         bool GetExists(TKey1 id1, TKey2 id2);
 
+        bool GetExists(Tuple<TKey1, TKey2> id);
+
         Task<bool> GetExistsAsync(TKey1 id1, TKey2 id2);
+
+        Task<bool> GetExistsAsync(Tuple<TKey1, TKey2> id);
 
         #endregion
 

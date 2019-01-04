@@ -4,7 +4,7 @@
     <TargetFramework>netcoreapp2.2</TargetFramework>
     <Authors>Optivem</Authors>
     <Company>Optivem</Company>
-    <Description>Interfaces for Generic Repository and Unit of Work</Description>
+    <Description>Interfaces for generic repository and generic unit of work patterns</Description>
     <Copyright>© Optivem. All rights reserved.</Copyright>
     <PackageLicenseUrl>https://github.com/optivem/csharp-commons-persistence/blob/master/LICENSE</PackageLicenseUrl>
     <PackageProjectUrl>https://opensource.optivem.com/csharp-commons-persistence</PackageProjectUrl>
