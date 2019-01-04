@@ -1,5 +1,5 @@
-title: Optivem C# Commons - Persistence
-description: Interfaces for Generic Repository and Unit of Work
+title: Optivem .NET Commons Persistence
+description: Interfaces for generic repository and generic unit of work patterns
 google_analytics: UA-63306472-4
 show_downloads: true
 theme: jekyll-theme-cayman
