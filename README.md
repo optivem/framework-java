@@ -1,6 +1,6 @@
 ## Introduction
 
-Welcome to Optivem Enterprise Framework (Java). This project is under construction.
+Welcome. This project is under construction.
 
 ## License
 
